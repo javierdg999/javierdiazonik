@@ -1,0 +1,42 @@
+
+/* Nuevos estilos para el personaje flotante */
+.hero-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/hero/bgmovil.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.floating-character {
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/hero/personajemovil.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.floating-character {
+    animation-name: float;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: fixed;
+}
+/*
+@keyframes float {
+    0% {
+        transform: translateY(-100%);
+    }
+    0% {
+        transform: translateX(100%);
+    }
+}  */

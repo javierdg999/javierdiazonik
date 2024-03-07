@@ -1,0 +1,146 @@
+/* * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} */
+
+body {
+	background: #000000;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh; 
+	max-width: 100vh;
+	display: flex;
+    flex-direction: column;
+    margin-top: 60px; 
+}
+
+.shows-contenedor {
+	width: 100vw; /* Cubre el 100% del ancho del viewport */
+    height: 100vh; /* Cubre el 100% de la altura del viewport */
+	margin: auto;
+	padding: 20px 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+
+}
+.shows-titulo {
+
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 0;
+}
+.shows-contenedor-conciertos {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+}
+
+.shows-card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+
+}
+
+.shows-card .shows-textos {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.shows-banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.shows-banner ul {
+	list-style: none;
+}
+
+.shows-banner ul li {
+	margin: 10px;
+	font-weight: bold;
+}
+
+.shows-banner .shows-button {
+	background: #ff0000;
+	color: #fff;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+/************* MEDIAS QUERYS  ************/
+
+@media screen and (min-width: 300px) {
+	body{
+		background-color: #a28805;
+	}
+}
+@media screen and (min-width: 600px) {
+	body{
+		background-color: #8c33f3;
+	}
+	.shows-contenedor {
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+		padding: 20px 0;
+
+		display: grid;
+		grid-template-columns: 1fr ;
+		gap: 10px;
+	}
+
+	.shows-contenedor-conciertos {
+		display: grid;
+		grid-template-columns:  1fr 1fr;
+		gap: 10px;
+
+	}
+}
+@media screen and (min-width: 900px) {
+	body{
+		background-color: #ff1515;
+	}
+	.shows-contenedor {
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+		padding: 20px 0;
+
+		display: grid;
+		grid-template-columns: 3fr 1fr ;
+		gap: 30px;
+	}
+
+	.shows-contenedor-conciertos {
+		display: grid;
+		grid-template-columns:  1fr 1fr 1fr;
+		gap: 30px;
+	}
+}

@@ -1,0 +1,109 @@
+/*** VARIABLES RESET & AJUSTES GLOBALES***/
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Poppins:wght@400;600;700;900&display=swap');
+
+:root{
+    --theme: #5a3737;
+    --primary: #ffffff;
+    --secondary: #000000;
+    --terciary: #ff4000;
+    --cuaternary: #a8ce00;
+    --font: 'Poppins', 'sans serif';
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    /* RESET */
+    
+    body,p,a,ul,li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        box-sizing: border-box;
+    }
+    
+    /* BASE STYLES */
+    
+    body{
+        background-color: var(--theme);
+        font-family: var(--font);
+    }
+  
+    body {
+        background: #895f5f;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        min-height: 100vh; 
+        max-width: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+/************* SECCIONES: AJUSTES GLOBALES SIZE COLOR  ************/
+    #music {
+      height: 100vh;
+      width: 100%;
+      background-color: #000;
+    }   
+    
+    #video {
+      height: 100vh;
+      width: 100%;
+      background-color: #666;
+      }
+      
+      #shows {
+        height: 100vh;
+        background-color: #999;
+      }
+      
+      #news {
+        height: 100vh;
+        background-color: #ccc;
+      }
+      
+      #shop {
+        height: 100vh;
+        background-color: #886dec;
+      }
+      /* titulos */
+
+      .music-titulo,
+      .video-titulo,
+      .shows-titulo,
+      .news-titulo,
+      .shop-titulo
+      {
+        margin-top: 40px;
+        margin-left: 15px;
+      }
+      
+/************* MEDIAS QUERYS viewport 100%************/
+      @media screen and (min-width: 769px) { /* Media query para desktop */
+        #music,
+        #video, 
+        #shows, 
+        #news, 
+        #shop {
+          width: 100vw; /* Ocupa el 100% del ancho en desktop */
+          min-height: 100vh; /* Garantiza la altura mínima en desktop */
+          margin: 0 auto; /* Centra la sección horizontalmente */
+        }
+      }
+ 
+
+/************* MEDIAS QUERYS GUIA COLOR ************/
+@media screen and (min-width: 300px) {
+	body{
+		background-color: #a28805;
+	}
+}
+@media screen and (min-width: 600px) {
+	body{
+		background-color: #8c33f3;
+	}
+}
+@media screen and (min-width: 900px) {
+	body{
+		background-color: #ff1515;
+	}
+}

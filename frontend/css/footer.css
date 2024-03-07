@@ -1,0 +1,74 @@
+.footer{
+        background-color: black;
+        color: var (--primary);
+        position: ;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+}
+
+.contact-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+ul.social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer-info ul li {
+    margin-top: 10px; /* Separación vertical de 10px entre elementos */
+    margin-bottom: 10px; /* Separación vertical de 10px entre elementos */
+  }
+ .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrar los elementos verticalmente */
+    /*text-align: center;     /* Centrar el texto horizontalmente */
+  }
+  .footer-info ul.enlaces-legales a,
+  .footer-info .copy {
+    color: white;
+  }
+  .footer-info ul.enlaces-legales li {
+    margin: 5px 10px; /* Ajustar el espacio superior e inferior a 5px y el espacio lateral a 10px */
+  }
+  
+  /************* MEDIAS QUERYS  ************/
+
+  @media (min-width: 768px) {
+    #footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; /* Centrar el footer en la pantalla */
+      width: 100%; /* Ocupar todo el ancho del footer */
+    }
+  
+    .footer-wrapper {
+      width: 100%; /* Ocupar todo el ancho del footer */
+    }
+  
+    .footer-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%; /* Añadir esta línea */
+    }
+  
+    .footer-info ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
