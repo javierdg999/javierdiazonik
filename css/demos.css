@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../img/hero/bgmovil.png');
+    background-image: url('img/hero/bgmovil.png');
     background-size: cover;
     background-position: center;
 }
@@ -19,7 +19,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background-image: url('../img/hero/personajemovil.png');
+    background-image: url('img/hero/personajemovil.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 3;

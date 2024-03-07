@@ -4,14 +4,14 @@ function adjustImageSrc() {
     var floatingImage = document.querySelector('.floating-image');
 
     if (width >= 900) {
-        backgroundImage.src = "/frontend/img/hero/bgdesktop.png";
-        floatingImage.src = "/frontend/img/hero/personajedesktop.png";
+        backgroundImage.src = "img/hero/bgdesktop.png";
+        floatingImage.src = "img/hero/personajedesktop.png";
     } else if (width >= 768) {
-        backgroundImage.src = "/frontend/img/hero/bgtablet.png";
-        floatingImage.src = "/frontend/img/hero/personajetablet.png";
+        backgroundImage.src = "img/hero/bgtablet.png";
+        floatingImage.src = "img/hero/personajetablet.png";
     } else {
-        backgroundImage.src = "/frontend/img/hero/bgmovil.png";
-        floatingImage.src = "/frontend/img/hero/personajemovil.png";
+        backgroundImage.src = "img/hero/bgmovil.png";
+        floatingImage.src = "img/hero/personajemovil.png";
     }
 }
 
