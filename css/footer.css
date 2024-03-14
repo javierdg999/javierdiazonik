@@ -15,12 +15,13 @@
     margin-top: 10px;
   }
   
-ul.social-list {
+ul.social-list-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    gap: 10px;
   }
   .footer-info ul li {
     margin-top: 10px; /* Separación vertical de 10px entre elementos */

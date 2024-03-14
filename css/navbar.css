@@ -60,6 +60,7 @@ header {
     gap: 2rem;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
     
 .nav-list li a {
@@ -75,21 +76,20 @@ header {
     border-radius: 1px;
     transition: 0.3s;
 }
-.social-list{
+ul.social-list-nav{
     list-style-type: none;
     display: flex;
     gap: 0.5rem;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-}
-.social-list li a {
-    color: #ecececec;
+    gap: 10px;
 }
 
 .social-list li a {
     text-decoration: none;
     color: #ffffff;
 }
+
 .abrir-menu,
 .cerrar-menu {
     display: block;
@@ -110,7 +110,7 @@ header {
 }
 
 .cerrar-menu {
-    color: #ececec;
+    color: #ffffff;
 }
 
 
