@@ -21,7 +21,7 @@ ul.social-list-footer {
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    gap: 10px;
+    gap: 16px;
   }
   .footer-info ul li {
     margin-top: 10px; /* Separación vertical de 10px entre elementos */
@@ -45,13 +45,13 @@ ul.social-list-footer {
   /************* MEDIAS QUERYS  ************/
 
   @media (min-width: 768px) {
-    #footer {
+    .footer {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 0 auto; /* Centrar el footer en la pantalla */
-      width: 100%; /* Ocupar todo el ancho del footer */
+      width: 100vw; /* Ocupar todo el ancho del footer */
     }
   
     .footer-wrapper {
@@ -73,3 +73,13 @@ ul.social-list-footer {
       align-items: center;
     }
   }
+
+
+  @media (min-width: 1024px) { /* Ajusta este valor según el punto de interrupción de tu diseño para desktop */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
+    }
+}

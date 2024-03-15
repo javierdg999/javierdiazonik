@@ -78,7 +78,7 @@
       }
       
 /************* MEDIAS QUERYS viewport 100%************/
-      @media screen and (min-width: 769px) { /* Media query para desktop */
+      @media screen and (min-width: 420px) { /* Media query para desktop */
         #music,
         #video, 
         #shows, 
