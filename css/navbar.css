@@ -79,7 +79,7 @@ header {
 }
 ul.social-list-nav{
     list-style-type: none;
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     gap: 10px;
@@ -154,7 +154,7 @@ ul.social-list-nav{
 
     }
     ul.social-list-nav {
-        display: none;
+        display: flex;
         flex-direction: row;
         gap: 0.55rem;
         padding-left: 1.7rem;
@@ -162,7 +162,7 @@ ul.social-list-nav{
     }
 
     .social-list li {
-        list-style-type: none;
+        list-style-type: flex;
     }
 
     .social-list li a {

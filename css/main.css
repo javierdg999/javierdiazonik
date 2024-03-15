@@ -72,6 +72,7 @@
       .shows-titulo,
       .news-titulo,
       .shop-titulo
+      .contacto-titulo
       {
         margin-top: 40px;
         margin-left: 15px;
@@ -83,7 +84,8 @@
         #video, 
         #shows, 
         #news, 
-        #shop {
+        #shop,
+        #contacto {
           width: 100vw; /* Ocupa el 100% del ancho en desktop */
           min-height: 100vh; /* Garantiza la altura mínima en desktop */
           margin: 0 auto; /* Centra la sección horizontalmente */
